@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Star-Explorer</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #0b0c10;
+            color: white;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+        th, td {
+            border: 1px solid white;
+            padding: 10px;
+        }
+        a {
+            margin: 10px;
+            padding: 10px;
+            background: #1f2833;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Nearby Stars Explorer</h1>
+
+<h2>{{ title }}</h2>
+
+<a href="/">All Stars</a>
+<a href="/habitable">Stars With Habitable Planets</a>
+
+<table>
+    <tr>
+        <th>Star Name</th>
+        <th>Distance (light years)</th>
+    </tr>
+
+    {% for star in stars %}
+    <tr>
+        <td>{{ star["name"] }}</td>
+        <td>{{ star["distance"] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
