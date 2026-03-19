@@ -29,4 +29,4 @@ def habitable():
     return render_template("index.html", stars=stars, title="Habitable Stars")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
