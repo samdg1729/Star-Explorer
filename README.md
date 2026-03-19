@@ -12,7 +12,12 @@ A simple Flask-based web application to explore nearby stars within 100 light ye
 - Flask
 - SQLite
 
-## How to Run
+## Live Demo
+
+Access the web app here:
+https://star-explorer.onrender.com
+
+## How to Run Locally
 
 1. Install dependencies:
    pip install flask
